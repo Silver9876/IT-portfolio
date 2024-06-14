@@ -1236,6 +1236,8 @@ footer .left a{
 
 footer p, ul{
     margin-top: 10px;
+    font-style: italic !important;
+    list-style: none;
 }
 
 footer .right h4{
