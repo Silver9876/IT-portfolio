@@ -112,6 +112,8 @@ nav{
     margin-left: 2vw;
     font-size: 1rem;
     cursor: pointer;
+    font-weight: bold;
+    font-style: italic;
 
 }
 .login-button:hover {
