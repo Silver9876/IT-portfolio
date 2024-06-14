@@ -1234,6 +1234,10 @@ footer .left a{
     color: rgb(255, 221, 0);
 }
 
+footer p, ul{
+    margin-top: 10px;
+}
+
 footer .right h4{
     color: rgb(255, 221, 0);
     font-family: "Roboto", sans-serif;
