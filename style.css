@@ -1262,18 +1262,29 @@ footer .right{
     width: 33.33%;
 }
 
+.marc{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 marquee {
     width: 90%;
 }
 
-marquee img{
+marquee i{
+    font-size: 100px;
     margin-top: 250px;
-    width: 80px;
+    width: auto;
     margin-left: 80px;
     margin-right: 80px;
     margin-bottom: 60px;
-    color: whitesmoke;
+    color: rgb(45, 41, 41);
     /* background-color: rgba(255, 255, 255, 0.1); */
+}
+
+marquee i:hover{
+    color: white;
 }
 
 
