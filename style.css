@@ -42,11 +42,20 @@ header{
 .outer .sections .home, .aboutus, .services, .projects, .reviews{
     height: auto;
     width: 100%;
-    /* border: 2px solid black; */
+    /* border: 2px  solid black; */
 }
 html, body {
     scroll-behavior: smooth;
+    /* overflow-y: scroll;
+    width: 100vw;
+    height: 100vh;
+     margin: 0; 
+    padding: 0; */
   }
+
+  /* body::-webkit-scrollbar { 
+  display: none; 
+    } */
 
 
 nav{
@@ -770,8 +779,8 @@ span{
 
 .testim .cont div .img img {
     display: block;
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     margin: auto;
     border-radius: 50%;
 }
@@ -1237,6 +1246,7 @@ span{
 footer{
     height: auto;
     background-color: rgba(5, 5, 133, 0.7);
+    /* background-color: #042b52; */
     color: white;
 }
 
@@ -1308,7 +1318,7 @@ marquee i:hover{
 
 
 
-@media screen and (max-width: 720px){
+@media screen and (max-width: 1080px){
     .sections{
         padding-top: 50px;
     }
@@ -1575,10 +1585,10 @@ marquee i:hover{
   }
   
   @media screen and (min-width:720px) {
-    nav{
+    /* nav{
         display: flex;
         justify-content: center;
-    }
+    } */
     
   }
   
