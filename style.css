@@ -9,6 +9,7 @@ p{
 }
 
 
+
 h1,h2,h3,h4,h5,h6{
     font-style: italic !important;
 }
@@ -43,11 +44,16 @@ header{
     width: 100%;
     /* border: 2px solid black; */
 }
+html, body {
+    scroll-behavior: smooth;
+  }
 
 
 nav{
     position: fixed;
-    height: 3rem;
+    height: auto;
+    padding: 0;
+    margin: 0;
     width: 100vw;
     background-color:rgba(0, 0, 0, 0.6);
     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
@@ -97,6 +103,7 @@ nav{
     position: absolute;
     transition: all ease-in-out 250ms;
     margin: 0 0 0 10%;
+    /* margin-top: 20%; */
 }
 .nav-links li .nav-link:hover::before{
     width: 80%;
@@ -114,6 +121,7 @@ nav{
     cursor: pointer;
     font-weight: bold;
     font-style: italic;
+    height: auto !important;
 
 }
 .login-button:hover {
@@ -122,7 +130,7 @@ nav{
     border:1.5px solid #f2f5f7;
     transition: all ease-in-out 350ms;
 }
-.join-button{
+/* .join-button{
     color: #131418;
     background-color: #61DAFB;
     border: 1.5px solid #61DAFB;
@@ -136,7 +144,7 @@ nav{
     background-color: black;
     border:1.5px solid #f2f5f7;
     transition: all ease-in-out 350ms;
-}
+} */
 
 /*Styling Hamburger Icon*/
 .hamburger div{
@@ -247,15 +255,21 @@ span{
 }
 
 .home .left .buttons button{
-    padding: 8px;
+    padding: 15px;
+    font-size:18px;
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 20px;
     color: white;
-    font-weight: 600;
+    font-weight: bold;
     color: #131418;
     background-color: #61DAFB;
     border: 1.5px solid #61DAFB;
+    transition: 1s;
+}
+.home .left .buttons button:hover{
+    background-color: white;
+    /* border: black; */
 }
 .home .left .buttons button a{
     text-decoration: none;
@@ -1304,6 +1318,7 @@ marquee i:hover{
     nav{
         position: fixed;
         z-index: 3;
+        height: 3rem;
     }
     .hamburger{
         display:block;
@@ -1559,7 +1574,13 @@ marquee i:hover{
     background-color: #4c49ea;
   }
   
-  
+  @media screen and (min-width:720px) {
+    nav{
+        display: flex;
+        justify-content: center;
+    }
+    
+  }
   
   @media only screen and (max-width: 979px) {
     .ag-courses_item {
